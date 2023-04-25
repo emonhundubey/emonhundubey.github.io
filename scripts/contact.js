@@ -5,8 +5,9 @@ const contactPage = document.querySelector("#contact-page");
 submitButton.addEventListener("click", function(event) {
   event.preventDefault();
   const thankYouMessage = document.createElement("p");
-  thankYouMessage.textContent = "Thank you for your message";
-  thankYouMessage.style.fontSize = "24px";
+  thankYouMessage.textContent = "<p>Thank you for your message</p>";
+  thankYouMessage.style.fontSize = "24pt";
+  thankYouMessage.style.textAlign = "center"
   contactPage.innerHTML = "";
   contactPage.appendChild(thankYouMessage);
 });
